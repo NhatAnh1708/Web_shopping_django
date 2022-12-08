@@ -1,0 +1,152 @@
+{% extends "home/base.html" %}
+{%  load static %}
+
+{% block placeholder %}
+   <!-- body -->
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href=" ">Trang chủ</a>
+         <a href="#we_Do">Sản phẩm</a>
+         <a href="#team">Đội ngũ sản xuất</a>
+         <a href="#Info">Hỗ trợ khách hàng</a>
+      </div>
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                     <div class="sea_icon d_none ">
+                        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href=" "><img src="{% static 'images/logo.png' %}" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                     <div class="right_bottun">
+                        <button class="openbtn" onclick="openNav()"><img src="{% static 'images/menu_icon.png' %}" alt="#"/> </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="banner_main">
+         <div id="banner1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#banner1" data-slide-to="0" class="active"></li>
+               <li data-target="#banner1" data-slide-to="1"></li>
+               <li data-target="#banner1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="text-bg">
+                           <h1>MAKERSHOP</h1>
+                           <span>FOOTBALL </span>
+                           <a class="read_more" href="list">Khách hàng<br>thân quen</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+         </div>
+      </section>
+
+      <!-- software section -->
+
+      <div id="we_Do" class="we_do">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Sản phẩm</h2>
+                     <p>Chuyên quần áo bóng đá</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div id="hover_color" class="we_box">
+                     <span>1</span>
+                     <h3>Áo bóng đá bản Player</h3>
+                      <a class="read_more" href="store">Đặt mua</a>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div id="hover_color" class="we_box">
+                     <span>2</span>
+                     <h3>Áo bóng đá bản Fan</h3>
+                      <a class="read_more" href="cart">Đặt mua</a>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div id="hover_color" class="we_box">
+                     <span>3</span>
+                     <h3>Áo bóng đá bản Classic <br> </h3>
+                      <a class="read_more" href="checkout">Đặt mua</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="team" class="team">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>MAKER SHOP</h2>
+                     <p>Chúng tôi được tạo ra với mục đích mang mang lại thật nhiều điều tích cực<br>
+                         cho cộng đồng những người yêu bóng đá trên toàn đất nước Việt Nam.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="team_box">
+                     <figure><img src="{% static 'images/founder.jpeg' %}" alt="#"/></figure>
+                     <div class="social_box">
+                        <h3>Trần Duy Nhật Anh</h3>
+                        <p>CEO, Founder, Developer</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="team_box">
+                     <figure><img src="{% static 'images/minhngu.jpeg' %}" alt="#"/></figure>
+                     <div class="social_box">
+                        <h3>Nguyễn Trần Minh</h3>
+                        <p>President,Tester</p>
+                     </div>
+                  </div>
+               </div>
+         <div id="Info" class="Info">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Hỗ trợ khách hàng</h2>
+                      <p>Email:tranduynhatanh1708@gmail.com</p>
+                      <p>Hotline:0886442412</p>
+                      <p></p>
+                      <a class="read_more" href="lienhe">Liên hệ</a>
+                  </div>
+               </div>
+            </div>
+{% endblock %}
+

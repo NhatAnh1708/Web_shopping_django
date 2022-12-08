@@ -1,0 +1,15 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block placeholder %}
+    <h2>Đăng ký</h2>
+    <form action="/list/" method="post">
+        <label for="name">Tên:</label><br>
+        <input type="text" id="name" name="name" value=""><br>
+        <label for="birthday">Ngày sinh:</label><br>
+        <input type="text" id="birthday" name="birthday" value=""><br>
+        <label for="class_name">ID:</label><br>
+        <input type="text" id="class_name" name="class_name" value=""><br><br>
+        {% csrf_token %}
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
